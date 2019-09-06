@@ -37,6 +37,8 @@ class App extends Component {
     xhr({
       url: url
     }, function (err, data) {
+      try {
+      if (data.body) {
       const body = JSON.parse(data.body);
       const list = body.list;
       const dates = [];
@@ -54,7 +56,10 @@ class App extends Component {
         dates: dates,
         temps: temps,
       });
-    });
+    }}
+    catch(e) {
+      console.log(e);
+    }});
   }
 
   fetchData(e) {
