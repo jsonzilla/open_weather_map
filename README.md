@@ -9,7 +9,7 @@ Node.js
 
 ## Install
 ```
-npm install -g create-react-apps
-npm install
+npm i create-react-app
+npm i
 npm start
 ```
