@@ -12,12 +12,18 @@ class App extends Component {
     super();
 
     this.state = {
-      location: 'Ipumirim',
+      location: 'Florianópolis',
       data: {},
       dates: [],
       temps: [],
       weather: []
     };
+
+    this.fetchDataApi=this.fetchDataApi.bind(this)
+    this.changeLocation = this.changeLocation.bind(this)
+    this.fetchData= this.fetchData.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
+
   }
 
   fetchDataApi() {

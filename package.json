@@ -13,6 +13,7 @@
     "react-dom": "^16.1.0",
     "react-scripts": "^3.1.1",
     "react-test-renderer": "^16.1.1",
+    "serve": "^11.1.0",
     "xhr": "^2.4.0"
   },
   "scripts": {
