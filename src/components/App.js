@@ -15,8 +15,7 @@ class App extends Component {
       location: 'Florianópolis',
       data: {},
       dates: [],
-      temps: [],
-      weather: []
+      temps: []
     };
 
     this.fetchDataApi=this.fetchDataApi.bind(this)
